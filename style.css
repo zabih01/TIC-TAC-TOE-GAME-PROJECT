@@ -1,0 +1,134 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height:auto;
+    background-image: linear-gradient(to right, rgb(7, 187, 187), rgb(215, 42, 197));
+}
+.game_container{
+    height:70vh;
+    width:40vw;
+    background-color: rgb(7, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+.game_container:hover{
+    transform: scale(1.2);
+    rotate: 360deg;
+    transition: all 0.3s ease-in-out;
+}
+.game{
+    height:70vh;
+    width: 30vw;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+     border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.box{
+    height:18vmin;
+    width: 18vmin;
+    background-color: rgb(114, 212, 212);
+    color: tomato;
+     border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.box:hover{ 
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background-color:rgb(90, 165, 165);
+    color: rgb(185, 91, 75);
+}
+.msg_container{
+    height:100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.hide{
+    display: none;
+}
+.winner_msg{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(37, 50, 37);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#new_btn{
+    padding:8px 16px;
+    background-color: rgb(7, 187, 187);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    font-weight: bold;
+
+}
+#new_btn:hover{
+    background-image: linear-gradient(to right, rgb(7, 187, 187), rgb(215, 42, 197));
+    color: black;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.heading{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    margin-top: 40px
+}
+.heading h1{
+    margin-bottom: 20px;
+}
+.heading p{
+    font-size: 20px;
+    color: rgb(37, 50, 37);
+    margin-bottom: 10px;
+
+}
+#reset_btn{
+    padding: 10px 16px;
+    background-color: rgb(7, 187, 187);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left:12rem;
+}
+#reset_btn:hover{
+    background-image: linear-gradient(to right, rgb(7, 187, 187), rgb(215, 42, 197));
+    color: black;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
